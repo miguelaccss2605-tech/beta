@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fdf3e6;
+     height: 100%;
+     width: 100%;
+     overflow-x: hidden;
+  
+    background-image: url(imagenesCuentos/WhatsApp\ Image\ 2025-08-10\ at\ 9.18.18\ PM.jpeg);
+    background-size:contain;
+
+
+}
+
+nav
+{
+    width: 100%;
+    position: fixed;
+    margin-bottom: 100px;
+    z-index: 3;   
+    overflow:visible;
+    top: 0;
+    left: 0;
+   
+}
+.navegador li
+{
+    float: left;
+     transition: all ease 300ms;
+     position: relative;
+  
+}
+.imgmenu{
+
+    margin-top: 12px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.idioma
+{
+    text-align: center;
+    margin-top: 25px;
+    float: right;
+    width: 200px;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu 
+{
+    margin-top:23px ;
+    width: 105px;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-family:'Courier New', Courier, monospace;
+  
+}
+.menu:hover
+{
+    background-color: rgb(248, 182, 14);
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+    background-color: rgb(255, 255, 251);
+
+    height: 90px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+}
+
+/* Menu desplegabale */
+
+.navegador li:hover ul{
+    display: block;
+}
+
+.navegador ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(255, 255, 251); 
+    width: 300px;
+    text-align: left;
+    height: auto;
+
+}
+
+
+
+.navegador ul li a{
+    display: block;
+    padding: 10px;
+    width: 280px;
+    border-bottom: 1px solid black;
+}
+
+.navegador ul li a:hover{
+    background-color: rgb(248, 182, 14);;
+}
+
+/* VALORES POR DEFECTOS */
+
+.ImagenCuentos{
+    background-image: url(./imagenesCuentos/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 8px;
+    width: 700px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.ImagenCuentos div{
+    margin: auto;
+}
+
+.ImagenCuentos div h2{
+    padding-top: 180px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-family: 'UnifrakturCook';
+}
+
+.ImagenCuentos div p{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    
+}
+
+/* PARTE DEL CUENTO DE LOS TIOS */
+.tituloCuentos h2{
+    padding-top: 180px;
+    text-align: center;
+    font-size: 80px;
+    color:  rgb(249, 112, 62);
+    font-family: 'UnifrakturCook';
+}
+
+.tituloCuentos p{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(250, 112, 61);
+    
+}
+
+
+.textoCuentos{
+    margin: 20px 250px;
+    margin-bottom: 100px;
+}
+
+.textoCuentos h3{
+    font-family: 'UnifrakturCook';  
+    color: orangered;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+.textoCuentos p{
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.tioGrid1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.tioGrid1 img{
+    width: 300px;
+    height: 400px;
+}
+
+.tioGrid2{
+     margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tioGrid2 img{
+    width: 400px;
+    height: 420px;
+    margin-left: 30px;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.pieDePagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.parte1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 50px 0;
+}
+.pieDePagina .parte1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pieDePagina .parte1 .caja figure img{
+    width: 250px;
+}
+
+.pieDePagina .parte1 .caja h2{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.pieDePagina .parte1 .caja p{
+    color: #eaeaea;
+}
+
+.redesSociales a{
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 420px) {
+  /* NAV */
+  nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .menu,
+  .idioma {
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+    float: none;
+    font-size: 15px;
+  }
+
+  .imgmenu {
+    margin: 10px auto;
+    display: block;
+    width: 40px;
+  }
+
+  /* IMAGEN CUENTOS */
+  .ImagenCuentos {
+    width: 90%;
+    height: 200px;
+    margin-top: 40px;
+   
+  }
+
+  .ImagenCuentos div h2 {
+    font-size: 28px;
+    padding-top: 60px;
+  }
+
+  .ImagenCuentos div p {
+    font-size: 18px;
+  }
+
+  /* TITULOS Y TEXTOS */
+  .tituloCuentos h2 {
+    font-size: 30px;
+    padding-top: 80px;
+  }
+
+  .tituloCuentos p {
+    font-size: 20px;
+  }
+
+  .textoCuentos {
+    margin: 15px;
+  }
+
+  .textoCuentos h3 {
+    font-size: 18px;
+  }
+
+  .textoCuentos p {
+    font-size: 14px;
+  }
+
+  /* GRIDS DE IMÁGENES */
+  .tioGrid1,
+  .tioGrid2 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .tioGrid1 img,
+  .tioGrid2 img {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /* PIE DE PÁGINA */
+  .pieDePagina .parte1 {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .pieDePagina .parte1 .caja figure img {
+    width: 150px;
+  }
+
+  .pieDePagina .parte1 .caja h2 {
+    font-size: 16px;
+  }
+
+  .pieDePagina .parte1 .caja p {
+    font-size: 13px;
+  }
+
+  .redesSociales a {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* VIDEO DE FONDO */
+  video {
+    display: none; /* Mejora rendimiento en móviles pequeños */
+  }
+}
+

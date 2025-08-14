@@ -1,0 +1,754 @@
+/* SELECTOR UNIVERSAL Y BODY PARA ASPECTOS ESCENCIALES */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 244);
+}
+
+/* NAVEGADOR */
+nav
+{
+    width: 100%;
+    position: fixed;
+    margin-bottom: 100px;
+    z-index: 3;   
+    overflow:visible;
+   
+}
+.navegador li
+{
+    float: left;
+     transition: all ease 300ms;
+     position: relative;
+  
+}
+.imgmenu{
+
+    margin-top: 12px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.idioma
+{
+    text-align: center;
+    margin-top: 25px;
+    float: right;
+    width: 200px;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu 
+{
+    margin-top:23px ;
+    width: 105px;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-family:'Courier New', Courier, monospace;
+  
+}
+.menu:hover
+{
+    background-color: rgb(248, 182, 14);
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+    background-color: rgb(255, 255, 251);
+
+    height: 90px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+}
+
+/* Menu desplegabale */
+
+.navegador li:hover ul{
+    display: block;
+}
+
+.navegador ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(255, 255, 251); 
+    width: 300px;
+    text-align: left;
+    height: auto;
+
+}
+
+
+
+.navegador ul li a{
+    display: block;
+    padding: 10px;
+    width: 280px;
+    border-bottom: 1px solid black;
+}
+
+.navegador ul li a:hover{
+    background-color: rgb(248, 182, 14);;
+}
+
+
+/* INTRODUCCION DE LA PAGINA WEB */
+
+.introduccion{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+   
+    
+}
+
+.introduccion p{
+    font-size: 19px;
+    margin-top: 20px;
+    border-left: 0.5px solid black;
+    padding: 20px;
+}
+
+.titulo1, .titulo2{
+    padding: 0 16px;
+    margin: 0;
+    font-size: 40px;
+}
+
+
+.distribucionintroduccion{
+ 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SECCION DE IMAGENES Y TRANSICIONES  */
+.slider1{
+    overflow: hidden;
+    width: 2500px;
+    padding-top: 30px;
+}
+.slider1 ul{
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambiaImagen 8s infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes cambiaImagen {
+    0%{margin-left:0 ;}
+    38%{margin-left:0 ;}
+
+    53%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
+.slider1 li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider1 img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* SECCION INTRODUCTORIA A LOS MITOS */
+.introduccionLeyendas{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    
+}
+
+.informaciónLeyendas:hover{
+    background-color:#abd9f75b ;
+
+}
+
+.introduccionLeyendas h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.informaciónLeyendas{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 80px;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 180px;
+    transition: all ease 2000ms;
+}
+.slider2{
+    overflow: hidden;
+    flex-basis: 600px;
+    height: 180px;
+    margin: 0;
+}
+.slider2 ul{
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambiaImagen2 8s infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes cambiaImagen2 {
+    0%{margin-left:0 ;}
+    38%{margin-left:0 ;}
+
+    53%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
+.slider2 li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.informacion{
+    padding: 5px 30px;
+    flex-basis: 900px;
+}
+
+.informacion p{
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+.informacion h2{
+    padding-top: 12px;
+}
+
+
+/* Menu de los mitos */
+
+    /* sección para poner el fondo y su respectiva distribución */
+#ContenedorLeyendas{
+    position: relative;
+    color: #e0d6c7;
+    height: 1250px;
+    width: 100%;
+
+}
+
+.encabezadoLeyendas{
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.encabezadoLeyendas h1{
+    margin: 10px 0;
+    font-size: 2.8rem;
+}
+
+.encabezado p{
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+   
+}
+
+.divisor{
+    height: 100px;
+    width: 800px;
+}
+
+/* SECCION DEL MENU DE LAS LEYENDAS */
+
+.MenuLeyendas{
+    max-width: 1200px;
+    margin:0 auto ;
+    padding: 20px;
+}
+.MenuLeyendas h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.gridLeyendas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta{
+    background-color: #1a1816;
+    border: 1px solid #4a4137;
+    text-align: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+
+}
+
+.tarjeta:hover{
+    box-shadow: 0px 10px 10px rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(20, 20, 20), alpha);
+    transform: translateY(-5px);
+}
+
+.tarjeta img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #4a4137; ;
+}
+
+.tarjeta h3{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta p{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.tarjeta a{
+   color: #c5a982;
+   text-decoration: none;
+   border: 1px solid #c5a982;
+   border-radius: 15px;
+   padding: 7px 15px;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+    /* SECCION DE INFORMACION DE LOS CUENTOS */
+
+.InfoCuentos{
+    padding: 30px 0 40px 0;
+    font-size: 19px;
+}
+.distribucionCuentos{
+    width: 50%;
+    position: relative;
+}
+
+    /* SECCION DE LOS CUENTOS */
+/* SECCION DEL MENU DE CUENTOS */
+.cuentos{
+    position: relative;
+    height: auto;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* ENCABEZADO DE LOS CUENTOS */
+.encabezadoCuentos{
+        text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.encabezadoCuentos h1{
+    margin: 10px 0;
+    font-size: 2.8rem;
+}
+.encabezadoCuentos p{
+      font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* VIDEO DE FONDO */
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* TARJETAS DE LOS CUENTOS */
+.gridCuentos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.tarjetaCuentos{
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+    border-radius: 7px;
+    transition: all ease 2000ms;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaCuentos:hover{
+    transform: translateY(-7px);
+}
+
+.tarjetaCuentos h3{
+    margin: 30px 20px 20px 30px;
+}
+
+.tarjetaCuentos p{
+    padding: 0 20px;
+}
+
+.tarjetaCuentos img{
+    width: 100%;
+    height: 280px;
+    border-radius: 7px;
+}
+
+.tarjetaCuentos a{
+    background-color: #379bdf;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 30px;
+    margin: 35px;
+    transition: all ease 2000ms;
+}
+
+.tarjetaCuentos a:hover{
+    background-color: #2671a4;
+}
+
+/* PARA PONER LAS LINEAS A UNO Y OTRO LADO DEL TEXTO */
+
+.lineasDelTitulo{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 25px auto;
+
+    
+}
+
+.linea{
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lineasCuento{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.lineas2{
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(248, 248, 122);
+}
+
+
+/* ANIMACIONES */
+
+/* .animada{
+    opacity: 0;
+    transform: translateX(100px);
+    transition : all 1s ease-out;
+}
+.animada.mostrar{
+    opacity: 1;
+    transform: translateX(0px);
+ 
+} */
+
+.pieDePagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.parte1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 50px 0;
+}
+.pieDePagina .parte1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pieDePagina .parte1 .caja figure img{
+    width: 250px;
+}
+
+.pieDePagina .parte1 .caja h2{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.pieDePagina .parte1 .caja p{
+    color: #eaeaea;
+}
+
+.redesSociales a{
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 412px)
+
+
+{
+
+    /* NAV */
+    nav ul.navegador {
+   
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul.navegador li {
+        margin: 5px 0;
+    }
+
+    nav ul.navegador img {
+        width: 120px; /* reduce logo */
+        height: auto;
+    }
+
+    nav ul.navegador li.menu a {
+        font-size: 14px; /* texto más pequeño */
+    }
+
+    nav .idioma{
+        display: none;
+    }
+
+    /* IMAGEN PRINCIPAL */
+    .imagenin img
+    {
+        width: 100%;
+        height: 900px;
+    }
+    .MenuLeyendas, .cuentos
+    {
+        display: flex;
+        flex-direction: column; /* Apila verticalmente */
+        align-items: center;    /* Opcional: centrar horizontalmente */
+        
+    }
+
+    
+
+   .introduccionLeyendas{
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+
+
+    .informaciónLeyendas {
+        display: flex;
+        flex-direction: column; /* Apila verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Opcional, para centrar el texto */
+        height: auto;
+    }
+
+
+    .informacion {
+        order: 2; /* Queda debajo */
+        width: 100%;
+        height: 80px;
+    }
+
+    /* carruseles */
+    .slider1{
+    overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.slider1 ul{
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambiaImagen 8s infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes cambiaImagen {
+    0%{margin-left:0 ;}
+    38%{margin-left:0 ;}
+
+    53%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
+.slider1 li{
+    list-style: none;
+  flex: 0 0 100%;
+}
+
+.slider1 img{
+    width: 100%;
+    border-radius: 8px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider2{
+    overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.slider2 ul{
+     display: flex;
+  animation: cambiaImagen 8s infinite alternate;
+  padding: 0;
+  margin: 0;
+  width: 200%; 
+}
+
+.slider2 li{
+    list-style: none;
+  flex: 0 0 100%;
+}
+.slider2 img{
+    width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+}
+/* Asegura que nada exceda el ancho */
+* {
+  box-sizing: border-box;
+    max-width: 100%;
+}
+
+#ContenedorLeyendas{
+    position: relative;
+    height: auto;
+    
+}
+
+.informaciónLeyendas 
+{
+    width: 100%;
+    margin: 5px;
+    height: 400px;
+    
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.introduccion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 2100;
+  }
+
+  .distribucionintroduccion {
+    flex-direction: column; /* apila texto y slider */
+    height: auto;
+  }
+
+
+
+  /* Footer */
+     footer .parte1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* espacio entre bloques */
+        padding: 15px;
+        text-align: center;
+    }
+
+    footer .parte1 .caja {
+        max-width: 90%;
+    }
+
+    footer .parte1 img {
+        width: 100px;
+        height: auto;
+    }
+
+    footer .redesSociales {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    footer .derechos {
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .imagenin img 
+    {
+        width: 100%;
+        height: 300px;
+    }
+}

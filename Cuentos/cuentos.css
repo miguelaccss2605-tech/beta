@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./imagenesCuentos/WhatsApp\ Image\ 2025-08-10\ at\ 9.18.18\ PM.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+
+/* NAVEGADOR */
+nav
+{
+    width: 100%;
+    position: fixed;
+    margin-bottom: 100px;
+    z-index: 3;   
+    overflow:visible;
+    top: 0;
+    left: 0;
+   
+}
+.navegador li
+{
+    float: left;
+     transition: all ease 300ms;
+     position: relative;
+  
+}
+.imgmenu{
+
+    margin-top: 12px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.idioma
+{
+    text-align: center;
+    margin-top: 25px;
+    float: right;
+    width: 200px;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu 
+{
+    margin-top:23px ;
+    width: 105px;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-family:'Courier New', Courier, monospace;
+  
+}
+.menu:hover
+{
+    background-color: rgb(248, 182, 14);
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+    background-color: rgb(255, 255, 251);
+
+    height: 90px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+}
+
+/* Menu desplegabale */
+
+.navegador li:hover ul{
+    display: block;
+}
+
+.navegador ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(255, 255, 251); 
+    width: 300px;
+    text-align: left;
+    height: auto;
+
+}
+
+
+
+.navegador ul li a{
+    display: block;
+    padding: 10px;
+    width: 280px;
+    border-bottom: 1px solid black;
+}
+
+.navegador ul li a:hover{
+    background-color: rgb(248, 182, 14);;
+}
+
+/* VALORES POR DEFECTOS */
+
+.ImagenCuentos{
+    background-image: url(./imagenesCuentoS/ELREY.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+
+
+
+.tituloCuentos h2{
+    padding-top: 180px;
+    text-align: center;
+    font-size: 80px;
+    color:  #d1ad59;
+    font-family: 'UnifrakturCook';
+}
+
+.tituloCuentos p{
+    text-align: center;
+    font-size: 50px;
+    color: #C4A661;
+    
+}
+
+
+/* Parte de Rey Burgués */
+
+.textoCuentos{
+    margin: 20px auto;
+    width: 720px;
+    margin-bottom: 100px;
+}
+
+.textoCuentos h3{
+    font-family: 'UnifrakturCook';  
+
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.textoCuentos p{
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.reyGrid1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.reyGrid1 img{
+    width: 300px;
+    height: 500px;
+}
+
+.parrafoRey{
+    margin-top: 20px;
+}
+
+.reyGrid2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.reyGrid2 img{
+    width: 280px;
+    height: 280px;
+    margin-left: 30px;
+}
+
+.reyGrid3{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.reyGrid3 img{
+    width: 300px;
+    height: 300px;
+    
+}
+
+.pieDePagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.parte1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 50px 0;
+}
+.pieDePagina .parte1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pieDePagina .parte1 .caja figure img{
+    width: 250px;
+}
+
+.pieDePagina .parte1 .caja h2{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.pieDePagina .parte1 .caja p{
+    color: #eaeaea;
+}
+
+.redesSociales a{
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 420px)
+{
+    /* NAV */
+    nav ul.navegador {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul.navegador li {
+        margin: 5px 0;
+    }
+
+    nav ul.navegador img {
+        width: 120px; /* reduce logo */
+        height: auto;
+    }
+
+    nav ul.navegador li.menu a {
+        font-size: 14px; /* texto más pequeño */
+    }
+
+    /* Footer */
+     footer .parte1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* espacio entre bloques */
+        padding: 15px;
+        text-align: center;
+    }
+
+    footer .parte1 .caja {
+        max-width: 90%;
+    }
+
+    footer .parte1 img {
+        width: 100px;
+        height: auto;
+    }
+
+    footer .redesSociales {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    footer .derechos {
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .imagenin img 
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    .textoCuentos
+    {
+        display: flex;
+        flex-direction: column; /* apila en columna */
+        gap: 20px; /* separa verticalmente */
+        width: 100%;
+        margin-left: 25px;
+    }
+
+    .reyGrid1, .reyGrid2, .reyGrid3
+    {
+        display: flex;
+        flex-direction: column; /* apila en columna */
+        gap: 20px; /* separa verticalmente */
+    }
+
+    .textoCuentos div img
+    {
+        width: 380px;
+    }
+
+}
